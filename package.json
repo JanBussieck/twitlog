@@ -1,0 +1,26 @@
+{
+  "name": "twitlog",
+  "version": "1.0.0",
+  "description": "A little web app to search your twitter conversations",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test",
+    "build-client": "browserify www/js/app.js -t babelify -o www/js/bundle.js",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.14.0",
+    "compression": "^1.5.2",
+    "express": "^4.13.3",
+    "pg": "^4.4.2"
+  },
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "babelify": "^6.3.0",
+    "browserify": "^11.2.0",
+    "react": "^0.13.3",
+    "react-router": "^1.0.0-rc3"
+  }
+}
